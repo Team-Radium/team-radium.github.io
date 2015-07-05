@@ -1,0 +1,637 @@
+====================
+     07-05-2015
+====================
+
+
+   * device/google/sprout4/
+1ad196f fix paths
+
+   * external/flac/
+78683d1 Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * external/libpng/
+3ffd050 Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * external/libvpx/
+bd6949a Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * frameworks/compile/slang/
+79ee331 Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * frameworks/opt/colorpicker/
+2a8218e Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * frameworks/opt/photoviewer/
+7fd5361 Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * frameworks/support/
+fc5b106 Merge tag 'android-5.1.1_r5' into cm-12.1
+
+   * kernel/mediatek/sprout/
+e96cab8 Fix
+79c61d7 Delete stray file
+
+   * kernel/oneplus/msm8974/
+3725ed4 msm/kgsl: make it static and fix 5.0 build error
+bd3d857 arm: LLVMLinux: use static inline in ARM ftrace.h
+9417997 Fix
+79fbfed :|
+
+   * vendor/radium/
+eed4296 Update radium-devices
+400daa8 Sort it alphabetically
+79129ad Merge pull request #1 from pranav01/patch-1
+74fa45c Add Tamatar and Lettuce :P
+
+====================
+     07-04-2015
+====================
+
+
+   * build/
+1f0708f Fix [2/2]
+25c6e75 Fix [1/2]
+
+   * device/google/sprout4/
+44af08f Update BoardConfig.mk
+
+   * device/oppo/msm8974-common/
+ce89ad3 msm8974: Disable QCOM HEVC decoders
+
+   * device/qcom/sepolicy/
+238dd07 sepolicy: add permissions to set system property
+
+   * external/libnfc-nci/
+4b08a00 Merge branch 'cm-12.1-nxp' into HEAD
+48ea540 pn547: Don't attempt to downgrade firmware
+
+   * external/stagefright-plugins/
+e9eddbf stagefright-plugins: Disable lowres
+
+   * frameworks/av/
+9ebdb9f Merge remote-tracking branch 'github/cm-12.1' into HEAD
+
+   * frameworks/base/
+d604cae Adjust recents fab position, a little to the left
+3f4b739 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
+3f2a0e7 Store manifest hash code in PackageParser.Package
+
+   * hardware/qcom/audio-caf/msm8960/
+298039c audio: Refactor amplifier_set_device logic
+
+   * hardware/qcom/keymaster/
+8e39456 keymaster: fix build for msm8994
+
+   * kernel/mediatek/sprout/
+4aa0930 Update mkcompile_h
+71ad43d Remove Android.mk causing conflicts with inline kernel building
+441a332 Fix
+2c3e59f Update host name
+
+   * manifest/
+c66b7de Track cm's external/libpng
+f42b9e4 Track our own external/libpng
+
+   * packages/apps/Settings/
+bf20f3e Derp
+add79d7 Merge branch '5.1' of github.com:Team-Radium/packages_apps_Settings into 5.1
+b6d87d3 Merge remote-tracking branch 'cm/cm-12.1' into HEAD
+
+   * vendor/radium/
+8c0d01c Merge remote-tracking branch 'cm/cm-12.1' into HEAD
+
+====================
+     07-03-2015
+====================
+
+
+   * device/google/sprout4/
+f3e64df Fix
+
+   * device/qcom/sepolicy/
+881eea7 sepolicy: add rule to support tcm write on dpmwrapper socket
+42fc5b9 sepolicy: allow dpmd to create self socket and netlink socket.
+af2c6fd sepolicy: allow dpmd to connect to system_server
+6fdf10d sepolicy: Allow iptable rule addition when WQE is enabled
+6599f2c cnd: Allow nims to be removed
+324ba9f Sepolicy: add rule to support ATP feature
+
+   * external/whispersystems/WhisperPush/
+f22222a WhisperPush: accept registration SMS from any number
+
+   * external/wpa_supplicant_8/
+888a171 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_external_wpa_supplicant_8 into 5.1
+
+   * frameworks/av/
+0c2d0c6 CameraService: Bump up the maximum number of cameras
+2175054 Enable -Os back to audioflinger
+
+   * frameworks/base/
+59a42f4 Keyguard: Show retry text on unidentified fingerprint
+6831615 SystemUI: fix clock jumping when expanding QS from lockscreen
+7052bad Keyguard: Show fallback after 2 failed auth attempts
+a6fe97c Keyguard: Authenticate with fingerprint
+332f903 Automatic translation import
+
+   * hardware/qcom/keymaster/
+f33d1ad keystore: Enable building on msm8992 and msm8994
+
+   * hardware/ti/wlan/
+1cdbebc ti: Add interface_mtu request
+
+   * kernel/mediatek/sprout/
+64bd84a8 Update defconfig
+6c00fb8 Update
+b2bd3d7 Merge tag 'v3.10.82' of https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux-stable into cm-12.1
+c5e7ec7 enable intelliplug :v
+
+   * manifest/
+a69ca80 Track our own frameworks/av
+46fc541 Track our own wpa_supplicant
+e0637af Track arter97's wpa_supplicant
+
+   * packages/apps/Settings/
+51b8cad Settings: Remove Performance Settings
+2610125 Fix patch derpage for fingerprint settings
+72f0c23 Remove stray isotopes logo
+
+   * vendor/radium/
+71983e8 Additional APN cleanup and modifications
+c38581c Thou shalt not nano
+
+====================
+     07-02-2015
+====================
+
+
+   * bionic/
+5473db3 libc: Fix strict-aliasing violations.
+7d41fac Add md5 back to libc/bionic for targets that need it.
+d27246f cortex-a9: Fix reference to __memcpy_base_aligned.
+de53dcc libc: arm: Add __aeabi_d2uiz to libgcc_compat.
+1c56540 libc: arm: Update libgcc_compat.
+b2b91d6 libc: Don't build malloc leak check for userdebug.
+ce9ec0e libc: arm: Further optimized strchr, courtesy NetBSD.
+b092454 libc: arm: Optimized strrchr courtesy of NetBSD.
+dbb78de libc: arm: Remove a couple extra '.text's.
+3d1cf15 cortex-a9: Weird improvement to strlen if we 'hit the lottery'.
+ed0df2e libc: arm: Slight improvement to memchr.
+bcc9620 benchmarks: Add memchr/memrchr benchmarks.
+4f053b1 benchmarks: Add strcmp/strncmp benchmarks.
+5301776 benchmarks: Add strrchr benchmark.
+8e51242 libc: Avoid building some extra debug stuff.
+7138003 libc: arm: Add asm strchr.
+4a08e0b benchmarks: Add strchr benchmark.
+7f5a3e9 Speed-up ARM memcmp by leveraging NEON.
+a041683 Reduce -Wstrict-overflow level to 2 to make gcc 5.1.0 happy
+4198b88 libc: arm64: add optimized strcpy implementation
+6442df9 Fix build with clang
+ddbb10d Specify .cpu cortex-a15
+ccab44c Define char16_t and char32_t to make gcc 5.1 happy
+
+   * build/
+911464e Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_build into 5.1
+
+   * device/google/sprout4/
+19f728b Update radium.dependencies
+520caee Update BoardConfig.mk
+
+   * device/oppo/common/
+5b303ab Automatic translation import
+
+   * device/oppo/msm8974-common/
+dae420b msm8974-common: Update firmware symlinks
+
+   * external/whispersystems/WhisperPush/
+d4bae94 Automatic translation import
+9edd25a WhisperPush: add weekly active users metric
+
+   * frameworks/base/
+1d11593 Fingerprint: disallow API calls when fingerprint is not available
+aa811f0 Fix for previous commits
+846357c Revert "Revert "Freeing frame map""
+7bc64df Revert "Frameworks/base: Fix FingerprintManager JNI"
+caa205f base: fix BluetoothControllerImpl formatting issues
+82c00de bootanimation: fix exhaustive memory leaks
+24511bd Revert "Freeing frame map"
+7824128 aapt: Default to 0 compression ratio
+4a11b88 aapt: Don't compress qmg, wbp and arsc assets
+6ca2ba5 Early return in RemoteViewsAdapter is too late
+d69940c Bluetooth: Handling Null profile references before connect
+4015eb4 policy: don't allow app switch/recents key to be pressed on lockscreen
+092c4f5 Frameworks/base: Change String == to equals in Preference
+58f20ba Frameworks/base: Fix request removal in VoiceInteractionSession
+71b989d Catch errors for unknown object types.
+900a826 Fix potential npe
+1ea009c Sort Bluetooth devices in quick settings by name
+7ea7a58 Fix to crash when clicking text link without view activity
+80be7ad systemui: Handle case when network has been lost
+77c0b7e Frameworks/base: Don't allocate another identity matrix
+4ee0af6 SystemUI needs the SET_WALLPAPER permission
+70d2790 third part apps can unlock the phone without password even if the phone has setted the password
+7becf0f Frameworks/base: Fix potential NPE in InputMethod
+57dd42e Frameworks/base: Remove duplicate check in Mesh
+d789e2a Frameworks/base: Fix visibility flag in Editor
+53df79e Avoid duplicate surface creation.
+14513ef Frameworks/base: Fix format string in Geofence
+db11da8 Frameworks/base: Make IDENTITY_MATRIX final
+d03c38f Frameworks/base: Fix format string in Camera
+22d4c86 Frameworks/base: Fix precedence bug
+a5c3923 Frameworks/base: Use || instead of |
+7580782 Frameworks/base: Fix trivial equals implementation
+825b3c0 Frameworks/base: Fix a comparison
+e7a0f0a Frameworks/base: Force long computation
+00d805c keep mDefaultDisplayMetrics from concurrent modification.
+1f4c817 Frameworks/base: Check before foreach in Script
+de8dd7a Frameworks/base: Use equals for Integer comparison
+bbcdce9 Frameworks/base: Fix null-pointer check
+87fb6b7 Frameworks/base: Fix a hashCode implementation
+f709d77 Frameworks/base: Fix always-false equals
+1306b52 To call TypedArray.recycle() when we are done with the array.
+8643be9 Frameworks/base: Fix missing cast
+fd783a6 Frameworks/base: Remove unnecessary Pattern instance
+5ede0c0 Frameworks/base: Remove unnecessary Pattern instance
+5f3f954 Frameworks/base: Use ArraySet more explicitly
+64637c7 Themes: Fix bootloop when applying theme fonts
+d187abd Bad month value in DatePicker in Calendar Mode
+c53db3b NullPointerException in UsbStorageActivity
+cf5d411 Avoid duplicate call to onLoadFinished()
+1167bb9 Avoid possible memory leaks by ensuring stream closures
+1eda69d frameworks/base: Fix various aliasing violations
+9127c49 frameworks: squash of leak & race fixes
+1af89bf Fix 'fuchsia' typo.
+c4a0261 Fix: Battery saver mode
+a6ebdf7 SystemUI: fix lock screen phone shortcut showing when target is set to none
+55bf834 Call startInput on return from sleep mode
+0e6dd99 Store compiled code in Context.getCodeCacheDir()
+1435745 Remove fall through for KEYCODE_VOICE_ASSIST
+f9e8c48 Policy: Fixed key action for launching camera
+e5e289b Telephony: Initialize GsmCellLocation class members properly
+62ed32f QS: fix tiles not being refreshed on overscrolling
+68afcee Prevent duplicated registration of OnComputeInternalInsetsListener
+000490d Fixed grammar in the comment that introduces the Debug.MemoryInfo class.
+d1ad06b Correct a mistyped word "MSG_SET_CLEINT" to "MSG_SET_CLIENT"
+b84cbf9 Prevent AudioService dead lock issue.
+a4abfd1 Remove a bitrotted test.
+63224ac Prevent wrong system ui visibility callback after the user swipe
+0466e3f Disable Lots of Debugging
+76b70b4 Speed Up Long Press Timeout
+8aa17a8 bless python versions newer than 2.6
+2ef4a03 Enable Non Market Apps/Disable Package Verifier
+0eb11e3 frameworks/base: Fix build in ISO C++11 mode
+8281b2e frameworks/base: Fix aliasing violations
+b9f5075 Fix ANDROID_LOOP=true for ArgoNavis and Perseus ringtones
+e15a964 Fix lockscreen selection view in landscape mode.
+f35f7ba Change SQL to improve performance.
+c9bc4bd Remove unnecessary updateSurfaceScreenOn call.
+6e7807b Fix an overflow found by ASAN.
+725d8b8 Fix for CharSequenceCreator test case
+21c3f07 Frameworks/base: Fix FingerprintManager JNI
+467f46f Frameworks/base: Fix AssetManager JNI
+8af62f5 Skip receiver if failed linkToDeath to ILocationListener
+f5b9eaf Prevent resource leak in YuvToJpegEncoder
+eb25023 Fix check for PROC_QUOTES mode
+1b61185 Fix incorrect usage of bool
+ec0f972 Fix Google backup/restore
+d172b30 Fix error overwriting when restoring error
+c38f1ef Memory leak: parseObbFile.footer
+2ca7257 base: add some iml files for easy opening in android studio
+b4997b9  MTU should be 1358 as per 3GPP standards, especially for LTE radio interfaces.
+4fa406a SystemUI: Add missing recycle calls
+087eecc base: fix external sdcard mountpoint
+e04c7fd Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into 5.1
+
+   * kernel/mediatek/sprout/
+99dc076 cpufreq: Optimize cpufreq_frequency_table_verify()
+78c79b5 shut up unwind
+86d375c fs: Add support for exfat 1.2.9
+df5c391 ARM: make kernel oops easier to read
+c952e1b sched: disable by default GENTLE_FAIR_SLEEPERS
+a6ee96b sched: GENTLE_FAIR_SLEEPERS fix unused cpu var
+8b7617a sched: Add sysinterface for GENTLE_FAIR_SLEEPERS
+c01c4be dm-crypt: add intelli_plug performance boost optimization
+aa2470f intelli_plug: add performance boost option
+e4a9e77 intelli_plug: minor clean up on the persist logic
+fd2a87d intelli_plug: move to its own directory. It's been cross platform for a while
+6e8166c intelli_plug: post 3.5 tweaks and code clean up
+e58b82b intelli_plug: add eco-extreme profile for more dual core use options
+ae4dbe1 intelli_plug: deprecate eco mode. replaced by built-in profile
+d4272bd intelli_plug: misc minor code fixup post 3.4 update
+19f32ac intelli_plug: remove legacy msm_rq based code
+6780477 intelli_plug: tweak cpu_nr_running threshold
+8b47fa0 Revert "Intelli_plug: kernel sched/core: add per cpu nr_running stats"
+3b7c966 intelli_plug: allow cpu_nr_running_threshold to be user adjustable
+7cb0506 intelli_plug: use per cpu nr_runnings stats for unplugging cores
+a4fa872 intelli_plug: add profiles support and misc code optimization
+d74a80d Intelli_plug: kernel sched/core: add per cpu nr_running stats
+a6e16fa intelli_plug: refactor stats calculation code to be less intrusive
+7c603a9 intelli_plug: performance tune-up continued...
+81e715b intelli_plug: bump threshold slightly for better response
+d51c9dc intelli_plug: tweak mp_decsion parameters and remove unused logic
+f4e235f intelli_plug: increase cores on persistence
+59cc6f9 Intelli-plug: intelligent hotplug cpu driver with eco mode
+fea5e0d Merge remote-tracking branch 'zz/cm-12.1' into cm-12.1
+59d9201 bump
+
+   * kernel/oneplus/msm8974/
+37b7375 Update mkcompile_h
+
+   * manifest/
+5c77cbf Track our own bionic repo
+
+   * packages/apps/BluetoothExt/
+9b7bdf8 Automatic translation import
+
+   * packages/apps/CMAccount/
+58f3401 Automatic translation import
+
+   * packages/apps/CMBugReport/
+165166e Automatic translation import
+
+   * packages/apps/CMFileManager/
+a2f4a60 Automatic translation import
+
+   * packages/apps/CMUpdater/
+e693b46 Automatic translation import
+
+   * packages/apps/Calculator/
+51f90c4 Automatic translation import
+
+   * packages/apps/Calendar/
+25f247c Automatic translation import
+
+   * packages/apps/Camera2/
+3f22bec Automatic translation import
+
+   * packages/apps/Contacts/
+f81964f Automatic translation import
+b267d4b Contacts: Fixed "%s" appearing in contact options in some languages
+
+   * packages/apps/ContactsCommon/
+68932a5 Automatic translation import
+
+   * packages/apps/DeskClock/
+9c89be4 Automatic translation import
+
+   * packages/apps/Dialer/
+a5f3526 Automatic translation import
+
+   * packages/apps/Eleven/
+3acc661 Automatic translation import
+
+   * packages/apps/Email/
+aa11058 Automatic translation import
+
+   * packages/apps/Gallery2/
+7a90da1 Automatic translation import
+
+   * packages/apps/InCallUI/
+a27f9ea Automatic translation import
+
+   * packages/apps/LockClock/
+b84dc10 Automatic translation import
+
+   * packages/apps/Mms/
+da1502d Automatic translation import
+
+   * packages/apps/Settings/
+17942d9 Automatic translation import
+be80afd Add new radium isotopes logo
+56a5367 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_packages_apps_Settings into 5.1
+
+   * packages/apps/SetupWizard/
+a1c8217 Automatic translation import
+
+   * packages/apps/SoundRecorder/
+279e7c3 Automatic translation import
+
+   * packages/apps/Stk/
+2f91312 Automatic translation import
+
+   * packages/apps/Terminal/
+70bf0bf Automatic translation import
+
+   * packages/apps/ThemeChooser/
+20b9f90 Automatic translation import
+
+   * packages/apps/Trebuchet/
+580f4f4 Automatic translation import
+
+   * packages/apps/TvSettings/
+4574978 Automatic translation import
+
+   * packages/apps/UnifiedEmail/
+1bb85d9 Automatic translation import
+
+   * packages/inputmethods/LatinIME/
+33da3c2 Automatic translation import
+
+   * packages/providers/DownloadProvider/
+4d94436 Automatic translation import
+
+   * packages/providers/ThemesProvider/
+b016009 Automatic translation import
+
+   * packages/services/Telecomm/
+9cf9699 Automatic translation import
+
+   * packages/services/Telephony/
+07866b3 Automatic translation import
+
+   * packages/wallpapers/Galaxy4/
+5cf246b Automatic translation import
+
+   * packages/wallpapers/PhaseBeam/
+185c9a3 Automatic translation import
+
+   * packages/wallpapers/PhotoPhase/
+553bd98 Automatic translation import
+
+   * vendor/cmsdk/
+1ba6ee2 Automatic translation import
+cc97903 CMSDK: Make sure to initialize ProfileTriggerHelper.
+
+   * vendor/radium/
+9dfe560 Vendor: Fix "mts" carrier password
+a0040ca vendorsetup: Handle new jenkins build parameters
+ca62021 Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_vendor_cm into 5.1
+3f7699f Additional European MVNOs
+
+====================
+     07-01-2015
+====================
+
+
+   * build/
+a1ad39b Merge branch '5.1' of https://github.com/Team-Radium/build into HEAD
+a214923 Start it off
+
+   * device/google/sprout4/
+9173f73 Add custom 6.0 tc for kernel
+
+   * external/libnfc-nci/
+09f86f3 pn547: Force rewrite of config even if we think it's the same
+18862aa libnfc-nci: Add NXP chip type disambiguation
+8e4a826 Rename NXP HAL
+47b6816 Include stl symbols and headers
+9cfc94e Update .conf file
+9ae659e Add Peer-To-Peer priority mechanism
+6de0db5 Adding MiFARE DESFire format support
+6114606 Correct corrupted CC value on MIFARE ULC tag
+5629b15 T1T HR0 and HR1 parameters missing in tag dectection
+fc700c3 Increase maximum AID routing buffer length and entry size.
+a18233a Increase APDU buffer size to support extended APDU
+102fc9b Fix unhandled NCI errors and wrong states
+e8720be Increase HCI EVT buffer size
+4c66914 Fix maximum HCP package size
+fd41b76 Memory leak and NULL pointer check fixes
+c631944 Code inspection fixes
+955c4b1 Changes base on coding conventions rules
+382b6a7 Fix board-specific HAL module naming
+8c3a43e nfc_nci: Allow passing in the HAL suffix as a variable
+
+   * external/whispersystems/WhisperPush/
+ba78f1e WhisperPush: service for WPv2 update to interrogate/disable v1
+
+   * frameworks/base/
+1718ee0 Wait until the Keyguard is drawn to dismiss the boot dialog.
+e52c239 WhisperPush: allowing whitelisting of needed framework permissions
+8889f49 Add default for Settings.System.DOUBLE_TAP_SLEEP_GESTURE.
+4f965c5 SystemUI: recalculate clock position on removing empty shade views
+b1e3b8c Enable fingerprint option in Settings [1/3]
+a6e670d Fingerprint [1/2]: Numerous Fingerprint Improvements
+a5c551d density: do not apply to virtual displays
+673fc49 SystemUI: hide navigation bar faster in SetupWizard
+dc4e37b Don't inflate new phone states on callbacks.
+aa8ad23 Clear callback handler queue when unregistering a phone state listener.
+
+   * frameworks/native/
+916232e Enable fingerprint option in Settings [2/3]
+
+   * frameworks/opt/telephony/
+af066e1 msim: fix parse error when roaming with slot 2 only
+
+   * hardware/qcom/audio-caf/msm8994/
+0fe80ca audio: Extend platform parser to allow device name aliasing
+
+   * packages/apps/Settings/
+95bf6ff Settings: use WhisperPush v2 if it is installed in place of v1
+45d1789 Show dialog if max number of fingerprints has been reached
+c82cafa Rename/Delete UI in fingerprint list
+aa16f13 Enable fingerprint option in Settings [3/3]
+a80d3c4 Settings: add wifi ap dialog 'show password' default overlay
+9e37bb6 settings: Fix developer options crash when mBackupManager is null
+
+   * packages/apps/SetupWizard/
+ee89d29 Clarify touch event consumption logic
+
+   * packages/apps/Trebuchet/
+769cdc7 Update default workspace configuration.
+
+   * vendor/radium/
+015d4fd Massive APN Update
+
+====================
+     06-30-2015
+====================
+
+
+   * build/
+435b17f Revert "build: use common factory script and input more parameters"
+e5ecd2b build: Now what was that for :3
+fd0c34c build: USER BUILDS SUCK
+68bc475 Derp
+a7f7006 Merge branch '5.1' of https://github.com/Team-Radium/build into 5.1
+3377070 Fix build
+ff38874 build: Add back block-based ota
+
+   * external/libnfc-nci/
+37d62d7 Merge "Add NFC-DEP routing"
+
+   * frameworks/av/
+5dd0f80 libstagefright: back off exynos4_enhancements HWC_HWOVERLAY usage
+143ed19 Revert "libstagefright: free mMoovBoxBuffer"
+
+   * frameworks/base/
+28258a1 Stop checking for resources.arsc in shouldCreateIdmap
+c1fad89 frameworks: Factor out Profiles API to CMSDK
+8d9044c SystemUI: fix recents task view height calculation
+548ee80 SystemUI: don't launch visualizer before we are attached
+fccf20c Merge branch 'cm-12.1' of https://github.com/CyanogenMod/android_frameworks_base into 5.1
+
+   * kernel/mediatek/sprout/
+b3d7844 Linux 3.10.82
+17c06c69 lpfc: Add iotag memory barrier
+14f8106 pipe: iovec: Fix memory corruption when retrying atomic copy as non-atomic
+97d905e drm/mgag200: Reject non-character-cell-aligned mode widths
+63dec31 tracing: Have filter check for balanced ops
+b6d2d39 crypto: caam - fix RNG buffer cache alignment
+
+   * packages/apps/CMFileManager/
+dad28ad ActionBar TextSelection: Prevent overlay of textfield
+
+   * packages/apps/DeskClock/
+5419fe6 DeskClock: Refactor to point at Profiles in CMSDK.
+
+   * packages/apps/InCallUI/
+062ec69 Revert "[2/2] InCallUI: let InCallUI handle proximity sensor for incoming calls"
+
+   * packages/apps/Settings/
+f6131d1 Settings: Refactor to point at Profiles in CMSDK.
+bc0b867 Fix derp
+4ad2b2c Resize the radium isotopes banner logo
+
+   * packages/apps/Trebuchet/
+31559ae Hide workspace shortcuts during binding when AllApps is shown.
+
+   * vendor/radium/
+4c4e428 vendor/cm: overlay start for ProfileService in external framework.
+86dd83c Update radium-devices
+9447f96 config/common: force user builds to userdebug to prevent losing root access
+17cdec1 Add surnia to officially supported devices
+
+====================
+     06-29-2015
+====================
+
+
+   * bootable/recovery/
+8110781 improve Rainbow Mode
+
+   * build/
+c1f68ae definitions.mk: look for definitions.mk in device/*/build also
+ec35bda Merge branch '5.1' of https://github.com/Team-Radium/build into 5.1
+4bb1a39 build: change roomservice dependency name
+d816e85 build: force "user" type builds by default
+4a55a29 build: Add a flag to enable/disable optimizations
+4c71422 JustArchi's ArchiDroid Optimizations V4
+d2a6b58 Build: Allow board to specify additional flags
+ebaeffe Disable block-based ROM GitHub won't allow us to put 280 MB zip, fallback to older format
+11a273e Revert "build: Squash commits for optimization"
+
+   * device/google/sprout4/
+8b9ec66 Add ROM optis and extra compiler flags
+
+   * frameworks/av/
+4c6d30b audiopolicy: Add msm8994
+
+   * frameworks/base/
+49d68f9 return default density only for primary display
+8a649c1 alarmmanager: Add sanity checking for elapsed_realtime alarms
+829a047 Rotation related corrections
+
+   * hardware/qcom/audio-caf/msm8994/
+2eabacc msm8994: Remove bogus metadata
+
+   * kernel/oneplus/msm8974/
+b7ef565 makefile: add -ofast flag and remove reference to wrapper script
+ba5327f scripts: delete wrapper script causing conflict with ubertc 6.0
+4ba4afc Add support for UBERTC 6.0
+
+   * manifest/
+12c5c2f Mistake
+9cb12f4 Track UBERTC 4.8 for ROM and 6.0 for kernel from UBERTC (:D)
+
+   * vendor/radium/
+416572d radium: why debug :3
+e919551 Derp
