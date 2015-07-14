@@ -1,8 +1,2 @@
 Team-Radium Website
 =============
-
-
-
-
-
-
